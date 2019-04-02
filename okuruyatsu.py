@@ -26,7 +26,7 @@ def attach_click():
     
 #UIの設定
 root = Tk()
-root.title('おくるやつ')
+root.title('メール送るやつ')
 main_frame = ttk.Frame(root)
 server_label = ttk.Label(main_frame, text='サーバ情報')
 port_label = ttk.Label(main_frame, text='port')
