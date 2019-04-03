@@ -75,8 +75,8 @@ third_frame.grid(row=2,column=0,sticky=(N,E,S,W))
 #mainframe
 server_label.grid(row=1,column=1,sticky=W)
 server_entry.grid(row=1,column=2,sticky=W)
-port_label.grid(row=1,column=3,ipadx=5,sticky=W)
-port_entry.grid(row=1,column=4,ipadx=5,sticky=W)
+port_label.grid(row=1,column=3,sticky=W)
+port_entry.grid(row=1,column=4,sticky=W)
 efrom_label.grid(row=2,column=1,sticky=W)
 efrom_entry.grid(row=2,column=2,sticky=W)
 eto_label.grid(row=3,column=1,sticky=W)
@@ -88,9 +88,6 @@ attach_btn.grid(row=1,column=3,sticky=W)
 #thirdframe
 text_widget.grid(row=1,column=1,sticky=W)
 send_button.grid(row=1,column=5,sticky=W)
+
 #起動
-
-for child in main_frame.winfo_children():
-    child.grid_configure(padx=5, pady=5)
-
 root.mainloop()
